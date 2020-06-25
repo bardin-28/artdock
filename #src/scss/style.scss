@@ -1,0 +1,15 @@
+@import 'zerostyle.scss';
+
+$bodyColor:#1E2124;
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: $bodyColor;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'hat.scss';
