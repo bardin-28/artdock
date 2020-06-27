@@ -1,9 +1,20 @@
 .hat {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 9px 0px;
 
     ul {
         display: flex;
+
+        li {
+            margin-right: 25px;
+            color: $mainGrey;
+            font-size: 14px;
+        }
+    }
+
+    .hat__search img {
+        cursor: pointer;
     }
 }

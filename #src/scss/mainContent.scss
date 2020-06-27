@@ -1,0 +1,104 @@
+.mainContent {
+    padding-top: 17px;
+    background: url(../img/mainContentBg.svg) no-repeat left center;
+    position: relative;
+
+    .dots {
+        height: 90px;
+        width: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 13%;
+        left: 0;
+
+        span {
+            margin: 6px;
+            height: 5px;
+            width: 5px;
+            background: $mainOrange;
+            border-radius: 50%;
+        }
+    }
+
+    .mainContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mainNews {
+        width: 80%;
+        .mainNews__head {
+            display: flex;
+            padding-bottom: 20px;
+        }
+
+        .mainNews__title {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                position: relative;
+                padding-left: 27px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            h2:before {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                width: 17px;
+                height: 100%;
+                background: url(../img/arrow.svg) no-repeat;
+
+            }
+        }
+
+        .mainNews__filter {
+            margin-left: auto;
+            select {
+                width: 166px;
+                height: 32px;
+                color: $mainGrey;
+                background: #282B2E;
+                box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+    .sideNews {
+        padding-left: 30px;
+        width: 20%;
+        .sideNews_head{
+            padding-bottom: 20px;
+        }
+        .sideNews__title {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                position: relative;
+                padding-left: 27px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            h2:before {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                width: 17px;
+                height: 100%;
+                background: url(../img/arrow.svg) no-repeat;
+
+            }
+        }
+    }
+}

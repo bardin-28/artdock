@@ -1,10 +1,14 @@
 @import 'zerostyle.scss';
 
 $bodyColor:#1E2124;
+$mainGrey: #BFC0C1;
+$mainOrange: #DCA74A;
+
 
 body {
     font-family: 'Ubuntu', sans-serif;
     background: $bodyColor;
+    color: #BFC0C1;
 }
 
 .container {
@@ -12,4 +16,6 @@ body {
     margin: 0 auto;
 }
 
+
 @import 'hat.scss';
+@import 'mainContent.scss';
