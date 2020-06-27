@@ -1,0 +1,32 @@
+/* 992 - 1200 px [Small Desktop]*/
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 0px 15px;
+        // 
+    }
+
+    .mainNews {
+        width: 100%;
+
+        .mainNews__content {
+            grid-template: repeat(3, 200px) / repeat(3, 350px);
+
+        }
+    }
+
+    .sideNews {
+        display: none;
+    }
+}
+
+/* 768 - 992 px [Tablet]*/
+@media screen and (max-width: 992px) {}
+
+/* 576px - 768px [Large Mobile]*/
+@media screen and (max-width: 768px) {}
+
+/* 480px - 576px [Medium Mobile]*/
+@media screen and (max-width: 576px) {}
+
+/* 320px - 479px [Small Mobile]*/
+@media screen and (max-width: 479px) {}

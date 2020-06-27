@@ -1,13 +1,13 @@
 @import 'zerostyle.scss';
 
-$bodyColor:#1E2124;
+$mainBlack:#1E2124;
 $mainGrey: #BFC0C1;
 $mainOrange: #DCA74A;
 
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: $bodyColor;
+    background: $mainBlack;
     color: #BFC0C1;
 }
 
@@ -19,3 +19,5 @@ body {
 
 @import 'hat.scss';
 @import 'mainContent.scss';
+@import 'footer.scss';
+// @import 'media.scss';

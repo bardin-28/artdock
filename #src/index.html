@@ -17,6 +17,8 @@
     <meta property="og:image" content="Project screenshot[nope]">
     <meta property="og:site_name" content="test-task.com">
     <!-- Fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/style.min.css">
@@ -43,7 +45,7 @@
         </div>
     </header>
     <section class="mainContent">
-        <div class="dots"><span></span>
+        <div class="mainContent_dots"><span></span>
             <span></span>
             <span></span>
             <span></span>
@@ -56,6 +58,7 @@
             <span></span>
             <span></span>
         </div>
+        <div class="mainContent_arrow"></div>
         <div class="container mainContainer">
             <div class="mainNews">
                 <div class="mainNews__head">
@@ -65,12 +68,13 @@
                     <div class="mainNews__filter">
                         <select name="newsFilter" id="newsFilter">
                             <option value="0" selected>by novelty</option>
-                            <option value="1">by date</option>
                         </select>
                     </div>
                 </div>
                 <div class="mainNews__content">
-
+                </div>
+                <div class="mainNews__btn">
+                    <a href="#" id="moreNews">show more</a>
                 </div>
             </div>
             <aside class="sideNews">
@@ -80,13 +84,65 @@
                     </div>
                 </div>
                 <div class="sideNews__content">
-
                 </div>
             </aside>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__copyrite">
+                    <img src="img/logo.svg" alt="logo">
+                    <p>
+                        Online edition of honest news. <br>
+                        &copy; All rights reserved. 2020
+                    </p>
+                </div>
+                <div class="footer__menu">
+                    <ul>
+                        <h6>Menu</h6>
+                        <li><a href="#">Policy</a></li>
+                        <li><a href="#">Economics</a></li>
+                        <li><a href="#">Incidents</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Culture</a></li>
+                    </ul>
+                </div>
+                <div class="footer__additional">
+                    <ul>
+                        <h6>Additional Information</h6>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Advertising</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <h6>Contacts</h6>
+                    <a href="mailto:newsexpert.life@gmail.com">newsexpert.life@gmail.com</a>
+
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscription">
+                    <h6>News subscription</h6>
+                    <form>
+                        <input placeholder="tretyakbro@gmail.com">
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </footer>
     <!-- JS Scripts -->
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

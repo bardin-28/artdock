@@ -1,0 +1,67 @@
+footer {
+    background: #282A2D;
+}
+
+.footer {
+    display: flex;
+    padding: 60px 0;
+    justify-content: space-between;
+
+    h6 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    li {
+        font-size: 13px;
+        font-weight: normal;
+
+        a {
+            display: inline-block;
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            border-bottom: 1px solid $mainOrange
+        }
+    }
+
+    .footer__copyrite {
+        p {
+            margin-top: 25px;
+        }
+    }
+
+    .footer__contacts {
+        ul {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+    }
+
+    .footer__subscription {
+        form {
+            display: flex;
+
+            input {
+                width: 175px;
+                height: 30px;
+                color: $mainGrey;
+                border: 0;
+                background: transparent;
+                border-bottom: 1px solid #737678;
+            }
+
+            button {
+                height: 30px;
+                width: 30px;
+                background: #737678;
+                color: #fff;
+            }
+        }
+    }
+
+}
