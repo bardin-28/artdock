@@ -91,7 +91,6 @@
             width: 17px;
             height: 100%;
             background: url(../img/arrow.svg) no-repeat;
-
         }
     }
 
@@ -113,7 +112,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         display: grid;
-        grid-template: repeat(3, 200px) / repeat(3, 270px);
+        grid-template: repeat(3, 2fr) / repeat(3, 2fr);
         grid-gap: 30px;
 
         &>div:nth-child(5) {
@@ -149,8 +148,7 @@
             .mainNews__caption {
                 margin-top: 10px;
                 padding: 20px;
-                background: #282B2E;
-                display: block;
+                background: #282b2e;
                 font-size: 13px;
 
                 &>p {
@@ -214,6 +212,10 @@
                             height: 5px;
                             width: 4px;
                             background: url(../img/authorElem.svg);
+                            -webkit-transform: translate(-50%, -50%);
+                            -moz-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            -o-transform: translate(-50%, -50%);
                         }
                     }
                 }
@@ -233,6 +235,10 @@
                         background: url(../img/authorElem.svg) no-repeat center;
                         width: 4px;
                         height: 5px;
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
                     }
                 }
             }
@@ -247,9 +253,7 @@
                 color: $mainBlack;
                 font-weight: normal;
             }
-
         }
-
     }
 }
 
@@ -283,7 +287,6 @@
             width: 17px;
             height: 100%;
             background: url(../img/arrow.svg) no-repeat;
-
         }
     }
 
@@ -299,7 +302,6 @@
                 color: $mainBlack;
                 font-weight: normal;
                 margin-bottom: 10px;
-
             }
         }
 
@@ -323,6 +325,10 @@
                     left: 0;
                     top: 50%;
                     transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
                 }
             }
         }

@@ -4,11 +4,10 @@ $mainBlack:#1E2124;
 $mainGrey: #BFC0C1;
 $mainOrange: #DCA74A;
 
-
 body {
     font-family: 'Ubuntu', sans-serif;
     background: $mainBlack;
-    color: #BFC0C1;
+    color: $mainGrey;
 }
 
 .container {
@@ -16,8 +15,7 @@ body {
     margin: 0 auto;
 }
 
-
 @import 'hat.scss';
 @import 'mainContent.scss';
 @import 'footer.scss';
-// @import 'media.scss';
+@import 'media.scss';

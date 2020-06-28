@@ -15,24 +15,24 @@ const getData = (urlMedia, urlMain, urlSide) => {
             data.push({ type: 'media', data: res })
             if (data.length == 3) {
                 mainNewsToPage(data)
-            }
-        })
+            };
+        });
     fetch(urlMain)
         .then(response => response.json())
         .then(res => {
             data.push({ type: 'main', data: res })
             if (data.length == 3) {
                 mainNewsToPage(data)
-            }
-        })
+            };
+        });
     fetch(urlSide)
         .then(response => response.json())
         .then(res => {
             data.push({ type: 'latest', data: res })
             if (data.length == 3) {
                 mainNewsToPage(data)
-            }
-        })
+            };
+        });
 }
 getData(mediaUrl, mainUrl, sideUrl)
 
@@ -44,8 +44,8 @@ const getZero = (num) => {
         return '0' + num;
     } else {
         return num;
-    }
-}
+    };
+};
 
 const mainNewsToPage = data => {
     let dataPosts = [],
@@ -59,8 +59,8 @@ const mainNewsToPage = data => {
             dataImg = data[i].data;
         } else {
             dataSide = data[i].data;
-        }
-    }
+        };
+    };
 
     // Posting Main News
     dataPosts.map((PostElem, PostIndex) => {
@@ -95,9 +95,9 @@ const mainNewsToPage = data => {
                     </div>
                 </div>                 
                 `
-            }
-        })
-    })
+            };
+        });
+    });
 
 
     // Posting Side News
@@ -119,7 +119,7 @@ const mainNewsToPage = data => {
             </div>
              `
     })
-}
+};
 
 // MORE NEWS
 
@@ -129,7 +129,7 @@ moreNewsBtn.addEventListener('click', () => {
     moreNewsBtn.innerHTML = 'Loading...'
     getMoreNews(mediaUrl, mainUrl)
     event.preventDefault()
-})
+});
 
 const getMoreNews = (urlMedia, urlMain) => {
     let data = []
@@ -140,7 +140,7 @@ const getMoreNews = (urlMedia, urlMain) => {
             if (data.length == 2) {
                 moreNewsToPage(data)
             }
-        })
+        });
     fetch(urlMain)
         .then(response => response.json())
         .then(res => {
@@ -148,8 +148,8 @@ const getMoreNews = (urlMedia, urlMain) => {
             if (data.length == 2) {
                 moreNewsToPage(data)
             }
-        })
-}
+        });
+};
 
 const moreNewsToPage = data => {
     moreNewsBtn.innerHTML = 'show more'
@@ -167,8 +167,6 @@ const moreNewsToPage = data => {
         }
     }
     let moreNews = dataPosts.filter((item, index) => index < 6);
-
-    console.log(moreNews)
 
     moreNews.map((PostElem, PostIndex) => {
         // DATE FROM POST
@@ -204,5 +202,4 @@ const moreNewsToPage = data => {
             }
         })
     })
-
 }

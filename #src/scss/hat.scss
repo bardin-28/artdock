@@ -1,6 +1,5 @@
 header {
     background: #282B2E;
-
 }
 
 .hat {
@@ -27,5 +26,10 @@ header {
 
     .hat__search img {
         cursor: pointer;
+    }
+
+    .hat__hamburger {
+        display: none;
+        font-size: 20px;
     }
 }
